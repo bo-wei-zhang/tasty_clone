@@ -15,21 +15,23 @@
 <body>
     <input type="checkbox" name="" id="nav-control">
     <header>
-        <img src="https://www.tasty.com.tw/images/index/logo.png" alt="" class="logo">
-        <ul class="icons">
-            <li><img src="https://www.tasty.com.tw/images/index/icon.png" alt="" class="fb"></li>
-            <li> 
-                <label for="nav-control">
-                <img src="https://www.tasty.com.tw/images/menu_icon.png" alt="" class="menu-btn">
-            </label>
-            </li>
-        </ul>        
-    </header>   
+        <div class="container">
+            <img src="https://www.tasty.com.tw/images/index/logo.png" alt="" class="logo">
+            <ul class="icons">
+                <li><img src="https://www.tasty.com.tw/images/index/icon.png" alt="" class="fb"></li>
+                <li>
+                    <label for="nav-control">
+                        <img src="https://www.tasty.com.tw/images/menu_icon.png" alt="" class="menu-btn">
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </header>
     <nav>
-        <ul class="nav-bar">            
-           <label for="nav-control">
-            <img src="https://www.tasty.com.tw/images/close02.png" alt="">
-           </label> 
+        <ul class="nav-bar">
+            <label for="nav-control">
+                <img src="https://www.tasty.com.tw/images/close02.png" alt="">
+            </label>
             <li class="nav-opt">MENU 嚐美食</li>
             <li class="nav-opt">SHOPS 找店點</li>
             <li class="nav-opt">NEWS 哈新聞</li>
@@ -40,8 +42,8 @@
         </ul>
         <div class="member">
             <img src="https://www.tasty.com.tw/images/index/member/icon-01_in.png" alt="">
-            <span class="log-in">登入</span>  
-            <span class="middle">|</span>         
+            <span class="log-in">登入</span>
+            <span class="middle">|</span>
             <span>註冊</span>
         </div>
     </nav>
@@ -60,14 +62,16 @@
 
         </div>
         <ul class="slides">
-            <li class="slide active"><img src="https://www.tasty.com.tw/images/img-01.png" alt=""></li>
-            <li class="slide"><img src="https://www.tasty.com.tw/images/img-02.png" alt=""></li>
-            <li class="slide"><img src="https://www.tasty.com.tw/images/img-03.png" alt=""></li>
-            <li class="slide"><img src="https://www.tasty.com.tw/images/img-04.png" alt=""></li>
+            <!-- <li class="slide active"><img src="https://www.tasty.com.tw/images/img-01.png" alt=""></li>
+            <li class="slide"><img src="https://www.tasty.com.tw/images/img-02.png" alt=""></li> 
+             <li class="slide"><img src="https://www.tasty.com.tw/images/img-03.png" alt=""></li>
+            <li class="slide"><img src="https://www.tasty.com.tw/images/img-04.png" alt=""></li> -->
+            <li class="slide slide-1 active"></li>
+            <li class="slide slide-2"></li>
 
             <ul class="selectors">
-                <li class="selector"></li>
-                <li class="selector"></li>
+                <!-- <li class="selector"></li>
+                <li class="selector"></li> -->
                 <li class="selector"></li>
                 <li class="selector"></li>
             </ul>
@@ -81,7 +85,7 @@
                 <img class="icon" src="https://www.tasty.com.tw/images/index/btn_icon-01.png" alt="">
             </div>
             <img class="bg" src="https://www.tasty.com.tw/images/index/btn_img_01.png" alt="">
-            <div class="filter"></div>            
+            <div class="filter"></div>
         </li>
         <li class="link">
             <div class="news txt">
@@ -95,8 +99,8 @@
         </li>
         <li class="link">
             <div class="club txt">
-                <h3>TASTy</h3>
-                <h4>俱樂部</h4>
+                <h3>TAKE OUT</h3>
+                <h4>外帶自取 線上點餐</h4>
                 <img class="icon" src="https://www.tasty.com.tw/images/index/btn_icon-03.png" alt="">
             </div>
             <img class="bg" src="https://www.tasty.com.tw/images/index/btn_img_03.png" alt="">
@@ -115,12 +119,12 @@
             <h5>最新消息</h5>
         </div>
         <ul class="announces">
-            <li class="announce">. 【王品集團聲明-防詐騙公告】</li>
+            <li class="announce">. 【居家風格野餐】開新美食紙娃娃DIY在家野餐吃西堤，不出門也開心...(more)</li>
             <li class="announce">
-                . 【美味安心點，超值袋著走】來店自取滿$568元，現折$50元，折後滿$800，再贈美式脆薯雞米花
+                . 【袋走西堤，宅也開新】美味新菜，來店自取滿$599元，現折$100元...(more)
             </li>
             <li class="announce">
-                . 【好禮】熱血回饋季，搖滾好禮"堤"回家~消費滿額『保溫袋+搖滾牛肋骨』最低$99元加價購!
+                . 【王品挺抗疫 月月加菜金 一路到年底】活動期間訂購王品集團外帶或外送餐點，掃code就有［王品加菜...
             </li>
         </ul>
     </div>
@@ -134,19 +138,20 @@
             <li><a href="">熱血公益</a></li>
         </ul>
         <p>
-            想給我們意見、想與我們合作，請立即聯絡我們
-            <br/>
+           <a href="#"> 想給我們意見、想與我們合作，請立即聯絡我們</a>
+            <br />
             營業時間：11:30~14:30 (最後點餐時間14:00)17:30~22:00(最後點餐時間21:00)
-            <ul class="nav-bottom">
-                <li class="nav-item"><a href="#">24hr線上訂位 </a> |</li>
-                <li class="nav-item"><a href="#">禮券查詢 </a> |</li>
-                <li class="nav-item"><a href="#">TASTy求才 </a> |</li>
-                <li class="nav-item"><a href="#">好站連結</a> |</li>
-                <li class="nav-item"><a href="#"> 使用條款 </a> |</li>
-                <li class="nav-item"><a href="#">隱私權政策  </a> |</li>
-                    
-            </ul>
-        </p>    
+        <ul class="nav-bottom">
+            <li class="nav-item"><a href="#">線上外帶自取 </a> |</li>
+            <li class="nav-item"><a href="#">24hr線上訂位 </a> |</li>
+            <li class="nav-item"><a href="#">禮券查詢 </a> |</li>
+            <li class="nav-item"><a href="#">TASTy求才 </a> |</li>
+            <li class="nav-item"><a href="#">好站連結</a> |</li>
+            <li class="nav-item"><a href="#"> 使用條款 </a> |</li>
+            <li class="nav-item"><a href="#">隱私權政策 </a> |</li>
+
+        </ul>
+        </p>
     </div>
     <footer>
         Copyright © TASTy Steak. All Rights Reserved.

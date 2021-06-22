@@ -37,7 +37,7 @@ function swapImgAuto(e) {
         }
     }
     active++
-    if (active > 3) active = 0
+    if (active > total-1) active = 0
 
 }
 // console.log(hasClass(document.querySelector('.slides > .slide'),'active'))

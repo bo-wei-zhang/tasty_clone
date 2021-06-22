@@ -6,18 +6,30 @@ body {
 header {
     position: fixed;
     z-index: 99;
+    width: 100%;
+    height: 65px;
+    background: #cc3333;
+    box-sizing: border-box;
+}
+
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: calc(100% - 140px);
-    height: 65px;
-    background: #cc3333;
-    padding: 0 95px;
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
 }
 
-header .icons{
+header .icons {
+    display: flex;
+    align-items: center;
     margin-right: 30px;
     cursor: pointer;
+}
+
+header .icons li {
+    padding: 0 5px;
 }
 
 header .logo {
@@ -31,7 +43,7 @@ header .fb {
 header .menu-btn {
     width: 50px;
     transition: .3s;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 header .menu-btn:hover {
@@ -45,8 +57,8 @@ nav {
     z-index: 999;
     background: #fff;
     height: 100vh;
-    padding: 0 35px 0 25px;  
-    transition: right .3s;  
+    padding: 0 35px 0 25px;
+    transition: right .3s;
 }
 
 nav .nav-bar {
@@ -54,67 +66,67 @@ nav .nav-bar {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: start;   
-    margin-top: 55px; 
-} 
-#nav-control{
-    display: none;     
+    align-items: start;
+    margin-top: 55px;
 }
-#nav-control:checked ~ nav{
+
+#nav-control {
+    display: none;
+}
+
+#nav-control:checked~nav {
     right: 0%;
 }
-.nav-bar img{
+
+.nav-bar img {
     width: 40px;
     position: absolute;
     top: 3%;
     right: 10px;
     cursor: pointer;
 }
+
 nav li {
-    color:#555;
+    color: #555;
     line-height: 2;
-    margin: 10px 0;   
+    margin: 10px 0;
     font-weight: 700;
     cursor: pointer;
 }
 
-nav li:hover{
+nav li:hover {
     color: #cc3333;
 }
-.member{
+
+.member {
     position: relative;
     margin-top: 30px;
     background: #ccc;
     padding: 12px;
 }
-.member img{
+
+.member img {
     width: 23px;
     position: absolute;
     left: 5px;
 }
-.member .log-in{
+
+.member .log-in {
     margin-left: 20px;
 }
-.member .middle{
+
+.member .middle {
     margin: 0 20px;
 }
-.member span{
+
+.member span {
     font-weight: 700;
     transition: .3s;
     cursor: pointer;
 }
-.member span:hover {   
-    color:#cc3333
-}
 
-
-header .icons {
-    display: flex;
-    align-items: center;
-}
-
-header .icons li {
-    padding: 0 5px;
+.member span:hover {
+    color: #cc3333
 }
 
 .slider {
@@ -132,14 +144,17 @@ header .icons li {
     left: 10%;
     z-index: 2;
     cursor: pointer;
+    display: none;
 }
 
-.slider .txt:hover > h2 {
+.slider .txt:hover>h2 {
     text-shadow: 0 5px 5px rgba(3, 3, 3, .5);
 }
+
 .slider .txt:hover .more-dishes {
     background: #f92a2a;
 }
+
 .slider h2 {
     font-size: 80px;
     line-height: 90px;
@@ -185,8 +200,8 @@ header .icons li {
     /* overflow: hidden; */
     width: 100%;
     height: 650px;
-    position: relative;  
-    animation: blur 2s ease reverse; 
+    position: relative;
+    animation: blur 2s ease reverse;
 }
 
 .slide {
@@ -195,16 +210,33 @@ header .icons li {
     position: absolute;
     opacity: 0;
 }
-.slides > .active{    
-   animation: blur 2s linear forwards; /*forwards can keep the state in the last fps*/
+
+.slide-1 {
+    background: url('https://www.tasty.com.tw/images/img-takeout04.jpg');
+    background-size: cover;
+    background-position: center center;
 }
-@keyframes blur{
-    from{
+
+.slide-2 {
+    background: url('https://www.tasty.com.tw/images/img-takeout02.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.slides>.active {
+    animation: blur 2s linear forwards;
+    /*forwards can keep the state in the last fps*/
+}
+
+@keyframes blur {
+    from {
         opacity: 0;
-    }to{
+    }
+    to {
         opacity: 1;
     }
 }
+
 .slide img {
     width: 100%;
     height: 650px;
@@ -231,10 +263,9 @@ header .icons li {
     background: #fff;
 }
 
-.selectors > .active{    
+.selectors>.active {
     background: #fff;
- }
-
+}
 
 .main-links {
     display: flex;
@@ -372,7 +403,7 @@ h5 {
     background: #999;
     position: absolute;
     top: 0;
-    left: -30px;
+    left: -3%;
 }
 
 .announce {
@@ -402,9 +433,18 @@ h5 {
     line-height: 24px;
 }
 
+.sitemap p a {
+    color: #fff;
+}
+
+.sitemap p a:hover {
+    text-decoration: underline;
+}
+
 .menu-bottom {
     display: flex;
     margin: 25px 0 40px;
+    font-size: 14px;
 }
 
 .menu-bottom li {
@@ -425,7 +465,7 @@ h5 {
 }
 
 .nav-bottom {
-    display: flex;    
+    display: flex;
 }
 
 .nav-bottom a {
@@ -449,4 +489,54 @@ footer {
     font-weight: 100;
     text-align: center;
     line-height: 35px;
+}
+
+@media screen and (max-width: 768px) {
+    .slides {
+        height: 450px;
+    }
+    .link .txt {
+        width: 100%;
+    }
+    .link .bg {
+        display: none;
+    }
+    .latest-news {
+        flex-direction: column;
+        align-items: center;
+    }
+    .announces::before {
+        display: none;
+    }
+    .latest-news .title {
+        margin: 0;
+    }
+    .sitemap {
+        padding: 20px 0;
+    }
+    .menu-bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .menu-bottom li {
+        background: rgba(0, 0, 0, .1);
+        border-radius: 10px;
+        margin: 10px;
+        width: calc(50% - 20px);
+        padding: 15px 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .menu-bottom li:first-child {
+        margin-left: 10px;
+    }
+    .sitemap p {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .nav-bottom {
+        width: 90%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
 }
